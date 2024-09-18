@@ -4,7 +4,7 @@ title = "秋水"
 theme = "hugo-digital-garden-theme"
 themesdir = "themes"
 copyright = "秋水 ©"
-
+ignorefiles = [ "content/template" ]
 
 [params]
   name = "秋水"
