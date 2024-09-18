@@ -1,0 +1,58 @@
+baseURL = "https://www.example.com"
+languageCode = "zh-cn"
+title = "秋水"
+theme = "hugo-digital-garden-theme"
+themesdir = "themes"
+copyright = "秋水 ©"
+
+
+[params]
+  name = "秋水"
+  description = "科技和魔法洪流的交汇🌊"
+  initials = "秋水"
+  googleAnalytics = ""
+  dateFormat = "2006-01-02"
+
+[menu]
+  [[menu.main]]
+    name = "数字海洋"
+    url = "/garden/"
+    weight = 1
+  [[menu.main]]
+    name = "项目"
+    url = "/projects/"
+    weight = 2
+  [[menu.main]]
+    name = "关于"
+    url = "/about/"
+    weight = 4
+
+
+[taxonomies]
+  garden_tags = 'garden_tags'
+  project_tags = 'project_tags'
+  library_tags = 'library_tags'
+
+
+[markup]
+  defaultMarkdownHandler = 'goldmark'
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.goldmark.parser]
+    autoHeadingID = true
+    autoHeadingIDType = 'github'
+    wrapStandAloneImageWithinParagraph = true
+    [markup.goldmark.parser.attribute]
+      block = false
+      title = true
+  [markup.goldmark.extensions]
+    definitionList = true
+    footnote = true
+    linkify = true
+    strikethrough = true
+    table = true
+    taskList = true
+    typographer = true
+  [markup.highlight]
+    # Choose from https://xyproto.github.io/splash/docs/all.html
+    style = 'monokailight'
