@@ -1,4 +1,3 @@
-baseURL = "https://www.example.com"
 languageCode = "zh-cn"
 title = "秋水"
 theme = "hugo-digital-garden-theme"
